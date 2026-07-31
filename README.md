@@ -34,4 +34,46 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# bizz-site-template
+
+## TailwindCSS
+TBD
+
+## ShadCN
+TBD
+
+## Storyblok
+TBD
+
+## Resend Emailing
+Run dev email server: 
+`pnpm email:dev`
+
+## Cloudflare Turnstile
+TBD
+
+## Supabase
+TBD
+
+## Vitest
+Run tests:
+`pnpm test`
+
+Run tests in watch mode:
+`pnpm test:watch`
+
+Run coverage tests:
+`pnpm test:coverage`
+
+
+## Playwrite
+Run generated tests:
+`pnpm exec playwright test`
+
+Run with Playwrights UI: 
+`pnpm exec playwright test --ui`
+
+Run visibily in the browswer: 
+`pnpm exec playwright test --headed`
+
+Open most recent HTML reports:
+`pnpm exec playwright show-report`
