@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.5.7",
+    "@sentry/nextjs": "^10.69.0",
     "@storyblok/react": "^7.2.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
