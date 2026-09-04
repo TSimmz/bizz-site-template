@@ -1,7 +1,11 @@
 import { StoryblokServerComponent } from "@storyblok/react/rsc";
+import { type SbBlokData } from "@storyblok/react/rsc";
 
+interface GridBlokData extends SbBlokData {
+  columns: SbBlokData[]
+}
 type GridProps = {
-  blok: any
+  blok: GridBlokData
 }
 
 const Grid = ({ blok }: GridProps) =>{
