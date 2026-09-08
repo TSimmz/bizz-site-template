@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Content Types",
+    "id": 216527726665305,
+    "object_type": "component"
+  },
+  {
+    "name": "Page Sections",
+    "id": 216527772470874,
+    "object_type": "component"
+  },
+  {
+    "name": "Section Items",
+    "id": 216527800835675,
+    "object_type": "component"
+  },
+  {
+    "name": "Shared Content",
+    "id": 216527828774492,
+    "object_type": "component"
+  },
+  {
+    "name": "Global",
+    "id": 216527848693341,
+    "object_type": "component"
+  },
+  {
+    "name": "Forms",
+    "id": 216527869554270,
+    "object_type": "component"
+  },
+  {
+    "name": "Utility",
+    "id": 216527904448095,
+    "object_type": "component"
+  },
+  {
+    "name": "Deprecated",
+    "id": 216527932657248,
+    "object_type": "component"
+  }
+]
