@@ -27,7 +27,7 @@ export default defineConfig({
       level: "info", // Log level: 'info', 'warn', 'error', 'debug'
     },
     file: {
-      enabled: true, // Enable file logging
+      enabled: false, // Enable file logging
       level: "info", // File log level
       maxFiles: 10, // Maximum log files to keep
     },
@@ -35,7 +35,7 @@ export default defineConfig({
 
   // Report configuration
   report: {
-    enabled: true, // Enable report generation
+    enabled: false, // Enable report generation
     maxFiles: 10, // Maximum report files to keep
   },
 
