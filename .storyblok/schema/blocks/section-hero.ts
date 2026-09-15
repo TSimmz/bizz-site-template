@@ -1,0 +1,103 @@
+import {
+  defineBlock,
+  defineField,
+} from '@storyblok/schema';
+
+export const sectionHeroBlock = defineBlock({
+  name: 'section_hero',
+  display_name: 'Hero Section',
+  is_root: false,
+  is_nestable: true,
+  description: '',
+  internal_tag_ids: [
+    '216527772470874',
+  ],
+  fields: [
+    defineField('internal_name', {
+      description: 'Used only to identify this section in Storyblok. Not displayed on the website.',
+      type: 'text',
+    }),
+    defineField('eyebrow', {
+      max_length: 60,
+      type: 'text',
+    }),
+    defineField('heading', {
+      max_length: 120,
+      required: true,
+      type: 'text',
+    }),
+    defineField('body', {
+      allow_target_blank: false,
+      type: 'richtext',
+    }),
+    defineField('media', {
+      filetypes: [
+        'images',
+      ],
+      tooltip: true,
+      type: 'asset',
+    }),
+    defineField('actions', {
+      allow: [
+        'item_action',
+      ],
+      maximum: 2,
+      minimum: 0,
+      type: 'bloks',
+    }),
+    defineField('theme', {
+      datasource: 'theme',
+      default_value: 'dark',
+      required: true,
+      source: 'internal',
+      type: 'option',
+      use_uuid: true,
+    }),
+    defineField('layout', {
+      default_value: 'centered',
+      options: [
+        {
+          _uid: '5eebbc69-5dcb-4f01-b1b9-65c62a1d63ba',
+          name: 'centered',
+          value: 'Centered',
+        },
+        {
+          _uid: '23a8b892-6943-4235-9e30-36e600811bf1',
+          name: 'split',
+          value: 'Media Right',
+        },
+        {
+          _uid: 'cb31692f-16c8-472d-832e-8eaf33af91e5',
+          name: 'split_reversed',
+          value: 'Media Left',
+        },
+      ],
+      required: true,
+      type: 'option',
+      use_uuid: true,
+    }),
+    defineField('text_alignment', {
+      default_value: 'left',
+      options: [
+        {
+          _uid: '2be1b2ce-1312-48df-a670-0c94eb092766',
+          name: 'left',
+          value: 'Left',
+        },
+        {
+          _uid: '174bc20a-5908-482a-95f7-1a2dfb824101',
+          name: 'center',
+          value: 'Center',
+        },
+        {
+          _uid: 'bc56d4ae-d5f0-4c5f-8151-bca12f73322c',
+          name: 'right',
+          value: 'Right',
+        },
+      ],
+      required: true,
+      type: 'option',
+      use_uuid: true,
+    }),
+  ],
+});

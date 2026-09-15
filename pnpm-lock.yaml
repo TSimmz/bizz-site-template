@@ -17,6 +17,9 @@ importers:
       '@storyblok/react':
         specifier: ^7.2.2
         version: 7.2.2(@floating-ui/dom@1.8.0)(next@16.2.12(@babel/core@7.29.7(supports-color@8.1.1))(@opentelemetry/api@1.9.1)(@playwright/test@1.62.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@storyblok/schema':
+        specifier: ^0.4.1
+        version: 0.4.1
       '@supabase/ssr':
         specifier: ^0.12.4
         version: 0.12.4(@supabase/supabase-js@2.111.0)
@@ -2206,6 +2209,9 @@ packages:
   '@storyblok/richtext@5.2.0':
     resolution: {integrity: sha512-M/DMwIxJ0SAksgKMP/IUOEh/Y3Ooeb6cnseH9pCHGGD64ayuHrOlxLqOVyVrqidIGyYYjn2VzoalVNixWIhMSQ==}
 
+  '@storyblok/schema@0.4.1':
+    resolution: {integrity: sha512-tXX5/JsbMSoj2V/nNkp0CQTB8FFJQ1V9xaoQwOoLa/vjqfSfY9TmcP+hHir6w6XN0nXkFSEe6usCAqwwcRR5mA==}
+
   '@supabase/auth-js@2.111.0':
     resolution: {integrity: sha512-hbRLgyQZEX0SDyF4LYXpv94qOIQyFATfpT5SIs2V0SisHnisVRkYgiPQWzv80l4S2mO3qof78rmoH9j5zoFsYQ==}
     engines: {node: '>=22.0.0'}
@@ -3551,6 +3557,7 @@ packages:
   eslint@9.39.5:
     resolution: {integrity: sha512-DgZS62aPLXKlnxILS/AYCoRvHaZeXceIzlXPkkGGzJWSow1aEk0lbTlxUSlyjC8jcaKxAdOnTDz+o1JFSBsyjw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -7749,6 +7756,11 @@ snapshots:
       - '@floating-ui/dom'
       - bufferutil
       - utf-8-validate
+
+  '@storyblok/schema@0.4.1':
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+      zod: 4.4.3
 
   '@supabase/auth-js@2.111.0':
     dependencies:
