@@ -195,27 +195,6 @@ export interface Page {
   internal_name?: string;
   title?: string;
   body?: (
-    | Article
-    | GlobalContactInfo
-    | GlobalHeader
-    | GlobalSocialLinks
-    | ItemAction
-    | ItemCard
-    | ItemContactMethod
-    | ItemFaq
-    | ItemFeature
-    | ItemGalleryImage
-    | ItemLogo
-    | ItemNavigationLink
-    | ItemProcessStep
-    | ItemResource
-    | ItemSocialLink
-    | ItemStat
-    | ItemTestimonial
-    | ItemTimelineEvent
-    | Navigation
-    | Page
-    | Person
     | SectionAnnouncement
     | SectionCardGrid
     | SectionFaq
@@ -230,9 +209,6 @@ export interface Page {
     | SectionTeam
     | SectionTestimonials
     | SectionTimeline
-    | Service
-    | SiteSettings
-    | UtilitySeo
   )[];
   seo?: UtilitySeo[];
   hide_from_navigation?: boolean;

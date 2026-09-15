@@ -14,6 +14,7 @@ export const itemActionBlock = defineBlock({
   ],
   fields: [
     defineField('label', {
+      max_length: 50,
       required: true,
       type: 'text',
     }),

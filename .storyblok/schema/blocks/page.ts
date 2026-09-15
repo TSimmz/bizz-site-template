@@ -19,6 +19,11 @@ export const pageBlock = defineBlock({
       type: 'text',
     }),
     defineField('body', {
+      component_tag_whitelist: [
+        216527772470874,
+      ],
+      restrict_components: true,
+      restrict_type: 'tags',
       type: 'bloks',
     }),
     defineField('seo', {

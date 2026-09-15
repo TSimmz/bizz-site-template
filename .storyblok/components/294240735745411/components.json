@@ -137,7 +137,7 @@
     "display_name": "Header Global",
     "description": "",
     "created_at": "2026-09-08T01:51:46.386Z",
-    "updated_at": "2026-09-08T01:51:53.375Z",
+    "updated_at": "2026-09-14T23:36:46.101Z",
     "id": 217672525363764,
     "schema": {},
     "image": null,
@@ -151,8 +151,15 @@
     "component_group_uuid": null,
     "color": null,
     "icon": null,
-    "internal_tags_list": [],
-    "internal_tag_ids": [],
+    "internal_tags_list": [
+      {
+        "id": 216527848693341,
+        "name": "Global"
+      }
+    ],
+    "internal_tag_ids": [
+      "216527848693341"
+    ],
     "content_type_asset_preview": null,
     "metadata": {}
   },
@@ -204,14 +211,15 @@
     "display_name": "Action",
     "description": "",
     "created_at": "2026-09-07T23:28:12.423Z",
-    "updated_at": "2026-09-08T00:22:09.526Z",
+    "updated_at": "2026-09-15T01:45:03.432Z",
     "id": 217637242571093,
     "schema": {
       "label": {
         "type": "text",
         "pos": 0,
         "id": "FFoW47Q5T4SXy7_DZx0i0g",
-        "required": true
+        "required": true,
+        "max_length": 50
       },
       "link": {
         "type": "multilink",
@@ -1155,7 +1163,7 @@
     "display_name": "Page",
     "description": null,
     "created_at": "2026-08-01T03:44:06.241Z",
-    "updated_at": "2026-09-08T01:52:14.350Z",
+    "updated_at": "2026-09-15T01:11:39.822Z",
     "id": 204252144610346,
     "schema": {
       "internal_name": {
@@ -1171,7 +1179,15 @@
       "body": {
         "type": "bloks",
         "id": "SfLkvZi8TFK2_9WkX2pFRg",
-        "pos": 2
+        "pos": 2,
+        "restrict_type": "tags",
+        "restrict_components": true,
+        "component_group_whitelist": [],
+        "component_group_denylist": [],
+        "component_tag_whitelist": [
+          216527772470874
+        ],
+        "component_tag_denylist": []
       },
       "seo": {
         "type": "bloks",
