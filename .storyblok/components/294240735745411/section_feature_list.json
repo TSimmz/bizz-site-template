@@ -1,0 +1,55 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_feature_list",
+  "display_name": "Feature List Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "eyebrow": {
+      "type": "text",
+      "pos": 0
+    },
+    "heading": {
+      "max_length": 120,
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 2
+    },
+    "features": {
+      "maximum": 4,
+      "minimum": 1,
+      "type": "bloks",
+      "pos": 3,
+      "component_whitelist": [
+        "item_feature"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "columns": {
+      "decimals": 0,
+      "max_value": 3,
+      "min_value": 1,
+      "steps": 1,
+      "type": "number",
+      "pos": 4
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 5,
+      "datasource_slug": "theme"
+    }
+  }
+}

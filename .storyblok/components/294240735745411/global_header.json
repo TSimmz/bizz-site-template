@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "global_header",
+  "display_name": "Header Global",
+  "description": "",
+  "internal_tag_ids": [
+    "216527848693341"
+  ],
+  "schema": {}
+}

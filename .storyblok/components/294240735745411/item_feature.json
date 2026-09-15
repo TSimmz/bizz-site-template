@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_feature",
+  "display_name": "Feature",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "icon": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 0
+    },
+    "heading": {
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 2
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 3
+    }
+  }
+}

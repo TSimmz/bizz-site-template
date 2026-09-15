@@ -1,0 +1,55 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": true,
+  "is_nestable": false,
+  "name": "site_settings",
+  "description": "",
+  "internal_tag_ids": [
+    "216527726665305"
+  ],
+  "schema": {
+    "site_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "site_description": {
+      "type": "textarea",
+      "pos": 1
+    },
+    "logo": {
+      "filetypes": [
+        "images"
+      ],
+      "required": false,
+      "tooltip": true,
+      "type": "asset",
+      "pos": 2
+    },
+    "logo_dark": {
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": true,
+      "type": "asset",
+      "pos": 3
+    },
+    "favicon": {
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": false,
+      "type": "asset",
+      "pos": 4
+    },
+    "default_social_image": {
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": true,
+      "type": "asset",
+      "pos": 5
+    }
+  }
+}

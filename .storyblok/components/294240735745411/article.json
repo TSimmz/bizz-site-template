@@ -1,0 +1,64 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": true,
+  "is_nestable": false,
+  "name": "article",
+  "display_name": "Article",
+  "description": "",
+  "internal_tag_ids": [
+    "216527726665305"
+  ],
+  "schema": {
+    "title": {
+      "type": "text",
+      "pos": 0
+    },
+    "slug": {
+      "type": "text",
+      "pos": 1
+    },
+    "excert": {
+      "type": "text",
+      "pos": 2
+    },
+    "featured_image": {
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": true,
+      "type": "asset",
+      "pos": 3
+    },
+    "published_at": {
+      "type": "datetime",
+      "pos": 4
+    },
+    "body": {
+      "type": "richtext",
+      "pos": 5
+    },
+    "author": {
+      "allow_advanced_search": true,
+      "entry_appearance": "card",
+      "filter_content_type": [
+        "person"
+      ],
+      "is_reference_type": true,
+      "max_options": 1,
+      "source": "internal_stories",
+      "type": "options",
+      "pos": 6
+    },
+    "seo": {
+      "type": "bloks",
+      "pos": 7,
+      "component_whitelist": [
+        "utility_seo"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    }
+  }
+}

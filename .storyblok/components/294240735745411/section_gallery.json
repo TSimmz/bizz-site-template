@@ -1,0 +1,46 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_gallery",
+  "display_name": "Gallery Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "heading": {
+      "max_length": 100,
+      "required": true,
+      "type": "text",
+      "pos": 0
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 1
+    },
+    "images": {
+      "minimum": 1,
+      "type": "bloks",
+      "pos": 2,
+      "component_whitelist": [
+        "item_gallery_image"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "allow_lightbox": {
+      "type": "boolean",
+      "pos": 3
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 4,
+      "datasource_slug": "theme"
+    }
+  }
+}

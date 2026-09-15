@@ -1,0 +1,40 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_testimonial",
+  "display_name": "Testimonial",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "quote": {
+      "required": true,
+      "type": "textarea",
+      "pos": 0
+    },
+    "name": {
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "role": {
+      "type": "text",
+      "pos": 2
+    },
+    "organization": {
+      "type": "text",
+      "pos": 3
+    },
+    "portrait": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 4
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "utility_seo",
+  "description": "",
+  "internal_tag_ids": [
+    "216527904448095"
+  ],
+  "schema": {
+    "title": {
+      "max_length": 60,
+      "type": "text",
+      "pos": 0
+    },
+    "description": {
+      "max_length": 200,
+      "type": "text",
+      "pos": 1
+    },
+    "social_title": {
+      "type": "text",
+      "pos": 2
+    },
+    "social_image": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 3
+    },
+    "canonical_url": {
+      "type": "text",
+      "pos": 4
+    }
+  }
+}

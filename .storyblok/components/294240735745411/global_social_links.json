@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "global_social_links",
+  "display_name": "Global Social Links",
+  "description": "",
+  "internal_tag_ids": [
+    "216527848693341"
+  ],
+  "schema": {
+    "items": {
+      "type": "bloks",
+      "pos": 0,
+      "component_whitelist": [
+        "item_social_link"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    }
+  }
+}

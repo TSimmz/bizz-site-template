@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_team",
+  "display_name": "Team Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "heading": {
+      "max_length": 100,
+      "required": true,
+      "type": "text",
+      "pos": 0
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 1
+    },
+    "people": {
+      "allow_advanced_search": true,
+      "entry_appearance": "card",
+      "filter_content_type": [
+        "person"
+      ],
+      "is_reference_type": true,
+      "min_options": 1,
+      "minimum": 1,
+      "restrict_components": true,
+      "restrict_type": "",
+      "source": "internal_stories",
+      "type": "options",
+      "pos": 2
+    },
+    "show_bios": {
+      "type": "boolean",
+      "pos": 3
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 4,
+      "datasource_slug": "theme"
+    }
+  }
+}

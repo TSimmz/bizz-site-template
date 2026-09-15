@@ -1,0 +1,39 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_gallery_image",
+  "display_name": "Gallery Image",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "internal_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "image": {
+      "filetypes": [
+        "images"
+      ],
+      "required": true,
+      "type": "asset",
+      "pos": 1
+    },
+    "caption": {
+      "type": "textarea",
+      "pos": 2
+    },
+    "credit": {
+      "type": "text",
+      "pos": 3
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 4
+    }
+  }
+}

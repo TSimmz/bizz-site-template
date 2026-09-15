@@ -1,0 +1,37 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_stat",
+  "display_name": "Stat",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "prefix": {
+      "type": "text",
+      "pos": 0
+    },
+    "value": {
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "suffix": {
+      "type": "text",
+      "pos": 2
+    },
+    "label": {
+      "required": true,
+      "type": "text",
+      "pos": 3
+    },
+    "description": {
+      "type": "textarea",
+      "pos": 4
+    }
+  }
+}

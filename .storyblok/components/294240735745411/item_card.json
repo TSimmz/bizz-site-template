@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_card",
+  "display_name": "Card",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "eyebrow": {
+      "type": "text",
+      "pos": 0
+    },
+    "heading": {
+      "max_length": 100,
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 2
+    },
+    "media": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 3
+    },
+    "action": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "bloks",
+      "pos": 4,
+      "component_whitelist": [
+        "item_action"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "featured": {
+      "default_value": false,
+      "type": "boolean",
+      "pos": 5
+    }
+  }
+}

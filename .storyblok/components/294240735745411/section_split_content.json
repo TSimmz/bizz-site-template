@@ -1,0 +1,82 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_split_content",
+  "display_name": "Split Content Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "eyebrow": {
+      "max_length": 60,
+      "type": "text",
+      "pos": 0
+    },
+    "heading": {
+      "max_length": 120,
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "type": "richtext",
+      "pos": 2
+    },
+    "media": {
+      "filetypes": [
+        "images"
+      ],
+      "required": true,
+      "tooltip": false,
+      "type": "asset",
+      "pos": 3
+    },
+    "actions": {
+      "maximum": 2,
+      "minimum": 0,
+      "type": "bloks",
+      "pos": 4,
+      "component_whitelist": [
+        "item_action"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "media_position": {
+      "default_value": "left",
+      "options": [
+        {
+          "_uid": "0848b285-ad0c-4865-82fe-e69394f87873",
+          "name": "left",
+          "value": "Left"
+        },
+        {
+          "_uid": "3998a477-b581-4946-a0c7-287a36e13113",
+          "name": "right",
+          "value": "Right"
+        }
+      ],
+      "type": "option",
+      "use_uuid": true,
+      "pos": 5
+    },
+    "media_style": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 6,
+      "datasource_slug": "media-style"
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 7,
+      "datasource_slug": "theme"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": true,
+  "is_nestable": false,
+  "name": "person",
+  "display_name": "Person",
+  "description": "",
+  "internal_tag_ids": [
+    "216527726665305"
+  ],
+  "schema": {
+    "name": {
+      "type": "text",
+      "pos": 0
+    },
+    "headshot": {
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": true,
+      "type": "asset",
+      "pos": 1
+    },
+    "short_bio": {
+      "type": "text",
+      "pos": 2
+    },
+    "full_bio": {
+      "type": "textarea",
+      "pos": 3
+    },
+    "email": {
+      "type": "text",
+      "pos": 4
+    },
+    "phone": {
+      "type": "text",
+      "pos": 5
+    },
+    "social_links": {
+      "type": "bloks",
+      "pos": 6,
+      "component_whitelist": [
+        "item_social_link"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    }
+  }
+}

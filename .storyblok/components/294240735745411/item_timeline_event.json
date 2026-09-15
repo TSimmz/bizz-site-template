@@ -1,0 +1,46 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_timeline_event",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "internal_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "date": {
+      "type": "datetime",
+      "pos": 1
+    },
+    "date_label": {
+      "type": "text",
+      "pos": 2
+    },
+    "heading": {
+      "required": true,
+      "type": "text",
+      "pos": 3
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 4
+    },
+    "media": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 5
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 6
+    }
+  }
+}

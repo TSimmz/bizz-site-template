@@ -13,7 +13,11 @@
     "test:coverage": "vitest run --coverage",
     "storyblok:pull": "storyblok components pull",
     "storyblok:push": "storyblok components push",
-    "storyblok:types": "storyblok types generate --strict"
+    "storyblok:types": "storyblok types generate --strict",
+    "storyblok:schema:validate": "storyblok schema validate .storyblok/schema/schema.ts",
+    "storyblok:schema:check": "storyblok schema push .storyblok/schema/schema.ts --dry-run",
+    "storyblok:schema:push": "storyblok schema push .storyblok/schema/schema.ts",
+    "storyblok:stories:validate": "storyblok stories validate --schema .storyblok/schema/schema.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.5.7",

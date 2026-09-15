@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": true,
+  "is_nestable": false,
+  "name": "navigation",
+  "display_name": "Navigation",
+  "description": "",
+  "internal_tag_ids": [
+    "216527726665305"
+  ],
+  "schema": {
+    "internal_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "items": {
+      "type": "bloks",
+      "pos": 1,
+      "component_whitelist": [
+        "item_navigation_link"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    }
+  }
+}

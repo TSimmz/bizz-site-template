@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_resource",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "internal_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "eyebrow": {
+      "type": "text",
+      "pos": 1
+    },
+    "title": {
+      "type": "text",
+      "pos": 2
+    },
+    "description": {
+      "type": "textarea",
+      "pos": 3
+    },
+    "resource_type": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 4,
+      "datasource_slug": "resource-type"
+    },
+    "link": {
+      "asset_link_type": false,
+      "email_link_type": false,
+      "required": true,
+      "restrict_content_types": false,
+      "type": "multilink",
+      "pos": 5
+    },
+    "thumbnail": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 6
+    }
+  }
+}

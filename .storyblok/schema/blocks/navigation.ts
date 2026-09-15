@@ -18,7 +18,6 @@ export const navigationBlock = defineBlock({
     }),
     defineField('items', {
       allow: [
-        'navigation_item',
         'item_navigation_link',
       ],
       type: 'bloks',

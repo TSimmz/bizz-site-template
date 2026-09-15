@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_logo",
+  "display_name": "Logo",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "name": {
+      "required": true,
+      "type": "text",
+      "pos": 0
+    },
+    "image": {
+      "filetypes": [
+        "images"
+      ],
+      "required": true,
+      "type": "asset",
+      "pos": 1
+    },
+    "link": {
+      "required": false,
+      "type": "multilink",
+      "pos": 2
+    }
+  }
+}

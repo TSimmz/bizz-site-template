@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": true,
+  "is_nestable": false,
+  "name": "service",
+  "display_name": "Service",
+  "description": "",
+  "internal_tag_ids": [
+    "216527726665305"
+  ],
+  "schema": {
+    "name": {
+      "type": "text",
+      "pos": 0
+    },
+    "description": {
+      "type": "textarea",
+      "pos": 1
+    },
+    "icon": {
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": true,
+      "type": "asset",
+      "pos": 2
+    },
+    "featured_image": {
+      "allow_external_url": false,
+      "filetypes": [
+        "images"
+      ],
+      "tooltip": true,
+      "type": "asset",
+      "pos": 3
+    },
+    "body": {
+      "type": "richtext",
+      "pos": 4
+    },
+    "seo": {
+      "type": "bloks",
+      "pos": 5,
+      "component_whitelist": [
+        "utility_seo"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    }
+  }
+}

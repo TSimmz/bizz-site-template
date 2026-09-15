@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_faq",
+  "display_name": "FAQ",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "question": {
+      "required": true,
+      "type": "text",
+      "pos": 0
+    },
+    "answer": {
+      "required": true,
+      "type": "richtext",
+      "pos": 1
+    }
+  }
+}

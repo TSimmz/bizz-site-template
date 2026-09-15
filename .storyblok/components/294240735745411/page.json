@@ -1,0 +1,44 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": true,
+  "is_nestable": false,
+  "name": "page",
+  "display_name": "Page",
+  "internal_tag_ids": [
+    "216527726665305"
+  ],
+  "schema": {
+    "internal_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "title": {
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "component_tag_whitelist": [
+        216527772470874
+      ],
+      "restrict_components": true,
+      "restrict_type": "tags",
+      "type": "bloks",
+      "pos": 2
+    },
+    "seo": {
+      "type": "bloks",
+      "pos": 3,
+      "component_whitelist": [
+        "utility_seo"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "hide_from_navigation": {
+      "type": "boolean",
+      "pos": 4
+    }
+  }
+}

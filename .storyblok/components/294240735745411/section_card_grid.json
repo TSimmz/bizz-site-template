@@ -1,0 +1,73 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_card_grid",
+  "display_name": "Card Grid Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "eyebrow": {
+      "type": "text",
+      "pos": 0
+    },
+    "heading": {
+      "max_length": 100,
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 2
+    },
+    "cards": {
+      "minimum": 1,
+      "type": "bloks",
+      "pos": 3,
+      "component_whitelist": [
+        "item_card"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "columns": {
+      "options": [
+        {
+          "_uid": "a9a63dd2-ce69-400d-aa20-4aec1da8b1fb",
+          "name": "one",
+          "value": "One"
+        },
+        {
+          "_uid": "488a57b5-19ad-4a52-8db6-75b593c3c5a2",
+          "name": "two",
+          "value": "Two"
+        },
+        {
+          "_uid": "6ca877ee-dd24-4711-b231-88bb65e24633",
+          "name": "three",
+          "value": "Three"
+        },
+        {
+          "_uid": "650ef052-296e-48ee-861a-6a69a25b3d4f",
+          "name": "four",
+          "value": "Four"
+        }
+      ],
+      "type": "option",
+      "use_uuid": true,
+      "pos": 4
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 5,
+      "datasource_slug": "theme"
+    }
+  }
+}

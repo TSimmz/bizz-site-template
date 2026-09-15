@@ -1,0 +1,47 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_process",
+  "display_name": "Process Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "eyebrow": {
+      "type": "text",
+      "pos": 0
+    },
+    "heading": {
+      "max_length": 100,
+      "required": true,
+      "type": "text",
+      "pos": 1
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 2
+    },
+    "steps": {
+      "maximum": 10,
+      "minimum": 1,
+      "type": "bloks",
+      "pos": 3,
+      "component_whitelist": [
+        "item_process_step"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 4,
+      "datasource_slug": "theme"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "item_process_step",
+  "display_name": "Process Step",
+  "description": "",
+  "internal_tag_ids": [
+    "216527800835675"
+  ],
+  "schema": {
+    "internal_name": {
+      "type": "text",
+      "pos": 0
+    },
+    "eyebrow": {
+      "type": "text",
+      "pos": 1
+    },
+    "heading": {
+      "required": true,
+      "type": "text",
+      "pos": 2
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 3
+    },
+    "media": {
+      "filetypes": [
+        "images"
+      ],
+      "type": "asset",
+      "pos": 4
+    },
+    "action": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "bloks",
+      "pos": 5,
+      "component_whitelist": [
+        "item_action"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    }
+  }
+}

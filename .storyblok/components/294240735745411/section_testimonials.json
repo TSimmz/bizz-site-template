@@ -1,0 +1,41 @@
+{
+  "id": 1,
+  "created_at": "",
+  "updated_at": "",
+  "is_root": false,
+  "is_nestable": true,
+  "name": "section_testimonials",
+  "display_name": "Testimonials Section",
+  "description": "",
+  "internal_tag_ids": [
+    "216527772470874"
+  ],
+  "schema": {
+    "heading": {
+      "max_length": 100,
+      "required": true,
+      "type": "text",
+      "pos": 0
+    },
+    "body": {
+      "type": "textarea",
+      "pos": 1
+    },
+    "testimonials": {
+      "type": "bloks",
+      "pos": 2,
+      "component_whitelist": [
+        "item_testimonial"
+      ],
+      "restrict_components": true,
+      "restrict_type": ""
+    },
+    "theme": {
+      "source": "internal",
+      "type": "option",
+      "use_uuid": true,
+      "pos": 3,
+      "datasource_slug": "theme"
+    }
+  }
+}
