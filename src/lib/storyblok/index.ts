@@ -7,5 +7,7 @@ export const getStoryblokApi = storyblokInit({
   apiOptions: {
     region: process.env.STORYBLOK_REGION,
   },
-  components: { ...STORYBLOK_COMPONENTS },
+  components: { 
+    ...STORYBLOK_COMPONENTS 
+  },
 });

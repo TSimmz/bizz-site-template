@@ -23,7 +23,6 @@
     "@hookform/resolvers": "^5.5.7",
     "@sentry/nextjs": "^10.69.0",
     "@storyblok/react": "^7.2.2",
-    "@storyblok/schema": "^0.4.1",
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.111.0",
     "class-variance-authority": "^0.7.1",
@@ -47,6 +46,7 @@
   "devDependencies": {
     "@playwright/test": "^1.62.0",
     "@react-email/ui": "^6.9.1",
+    "@storyblok/schema": "^0.4.2",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.3.2",
@@ -58,7 +58,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
     "jsdom": "^30.0.1",
-    "storyblok": "^4.22.4",
+    "storyblok": "^4.23.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.10"
