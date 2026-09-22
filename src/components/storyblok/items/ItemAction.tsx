@@ -1,22 +1,16 @@
 import Link from "next/link";
 import { storyblokEditable } from "@storyblok/react/rsc";
 
-import { Button } from "@/components/ui/button";
+import { Button, ButtonVariantProps } from "@/components/ui/button";
 import { resolveStoryblokLink } from "@/lib/storyblok/resolve-link";
 
 import type { ItemActionType } from "@/lib/storyblok/types";
-import { StoryblokMultilink } from "../../../../.storyblok/types/storyblok";
 
 type ItemActionProps = {
   blok: ItemActionType
 };
 
-type ItemActionStyle = ItemActionType['style']
-type Label = ItemActionType['label'];
-type Link = ItemActionType['link'];
-type Style = ItemActionType['style'];
-
-const actionVariantMap = {
+const actionVariantMap: Record<string, ButtonVariantProps> = {
   primary: "default",
   secondary: "secondary",
   outline: "outline",
