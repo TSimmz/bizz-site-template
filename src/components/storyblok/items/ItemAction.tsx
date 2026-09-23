@@ -1,29 +1,79 @@
 import Link from "next/link";
-import { storyblokEditable } from "@storyblok/react/rsc";
+import {
+  storyblokEditable,
+} from "@storyblok/react/rsc";
 
-import { Button, ButtonVariantProps } from "@/components/ui/button";
-import { resolveStoryblokLink } from "@/lib/storyblok/resolve-link";
+import type {
+  VariantProps,
+} from "class-variance-authority";
 
-import type { ItemActionType } from "@/lib/storyblok/types";
+import {
+  Button,
+  buttonVariants,
+} from "@/components/ui/button";
+
+import {
+  resolveStoryblokLink,
+} from "@/lib/storyblok/resolve-link";
+
+import type {
+  Block,
+} from "../../../../.storyblok/schema/schema";
+
+import type {
+  ItemActionStyle,
+} from "../../../../.storyblok/schema/options/item-action-style";
+
+type ItemActionType =
+  Block<"item_action">;
 
 type ItemActionProps = {
-  blok: ItemActionType
+  blok: ItemActionType;
 };
 
-const actionVariantMap: Record<string, ButtonVariantProps> = {
+type ButtonVariant =
+  NonNullable<
+    VariantProps<
+      typeof buttonVariants
+    >["variant"]
+  >;
+
+const actionVariantMap = {
   primary: "default",
   secondary: "secondary",
   outline: "outline",
   ghost: "ghost",
   text: "link",
-} as const;
+} satisfies Record<
+  ItemActionStyle,
+  ButtonVariant
+>;
 
-export function ItemAction({ blok }: ItemActionProps) {
-  const { href, external, target } = resolveStoryblokLink(blok.link);
+const isItemActionStyle = (
+  value: string,
+): value is ItemActionStyle => {
+  return Object.prototype.hasOwnProperty.call(
+    actionVariantMap,
+    value,
+  );
+}
 
-  const variant = actionVariantMap[blok.style ?? "primary"];
+export const ItemAction = ({
+  blok,
+}: ItemActionProps) => {
+  const {
+    href,
+    external,
+    target,
+  } = resolveStoryblokLink(blok.link);
 
-  const linkProps =
+  const style = isItemActionStyle(blok.style)
+    ? blok.style
+    : "primary";
+
+  const variant = actionVariantMap[style];
+
+  const targetProps =
     target === "_blank"
       ? {
           target: "_blank" as const,
@@ -33,13 +83,16 @@ export function ItemAction({ blok }: ItemActionProps) {
 
   return (
     <span {...storyblokEditable(blok)}>
-      <Button asChild variant={variant}>
+      <Button
+        asChild
+        variant={variant}
+      >
         {external ? (
-          <a href={href} {...linkProps}>
+          <a href={href} {...targetProps}>
             {blok.label}
           </a>
         ) : (
-          <Link href={href} {...linkProps}>
+          <Link href={href} {...targetProps}>
             {blok.label}
           </Link>
         )}
